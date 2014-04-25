@@ -1,74 +1,55 @@
-html, body {
-	font-family: Tahoma, sans-serif;
-	padding: 0px;
-	margin: 0px;
-	color: #333333;
-	font-size: 14px;
+body {
+  font-size: 18px;  
+  font-family: Arial;
+  color: #2aa0bd;
 }
 
-#wrapper {
-	width: 960px;
-	margin: 0 auto;
-}
 
-.clear {
-	clear: both;
-}
+#root:before,
+#root:after { content:""; display:table; }
+#root:after { clear:both; }
+#root { *zoom:1; }
 
-#archive ul {
-	float: right;
-	padding: 0px;
-	margin: 0px;
-}
+.sent-message:before,
+.sent-message:after { content:""; display:table; }
+.sent-message:after { clear:both; }
+.sent-message { *zoom:1; }
 
-#archive ul li {
-	font-size: 10px;
-	display: inline;
-	padding: 5px;
-	margin: 0px;
-}
+#root { width: 615px ; margin: 50px 0 0 50px; }
+#root h1 { font-size: 34px; font-style: italic; text-align: center; }
+#root .chat-container { float: left; border: 1px solid #ccc; border-radius: 5px; margin-right: 5px;
+	background: #4ae871; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4ae871 0%, #51e974 45%, #f1ffbc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4ae871), color-stop(45%,#51e974), color-stop(100%,#f1ffbc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4ae871 0%,#51e974 45%,#f1ffbc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4ae871 0%,#51e974 45%,#f1ffbc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4ae871 0%,#51e974 45%,#f1ffbc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4ae871 0%,#51e974 45%,#f1ffbc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ae871', endColorstr='#f1ffbc',GradientType=0 ); /* IE6-9 */ }
 
-#archive ul li a {
-	color: #333333;
-	text-decoration: none;
-}
+.chat-container h2 { font-size: 27px; padding: 0 6px 17px 6px; }
+.messages { padding-right: 15px; padding-left: 15px; padding-bottom: 192px;}
+.messages ul { list-style-type: none; padding: 0 0 0 1px; }
+.messages span { display: block; }
+.me { text-align: ; font-size: 16px; }
+.me strong, .other strong { font-weight: normal; font-style: italic; word-break:break-all; padding: 0 5px 1px 0px; }
 
-#header {
-	height: 64px;
-	background-image: url('images/topnav_divider.png');
-	background-repeat: repeat;
-	color: white;
-}
+.me span { font-size: 18px; border-bottom: 1px solid #333; padding-bottom: 1px; }
+.other { text-align: right; }
+#other .me { border-top: 1px solid #333; border-bottom: 0;}
 
-#nav {
-	float: left;
-	padding-top: 6px;
-}
 
-#header h1 {
-	float: right;
-	padding: 15px;
-	margin: 0px;
-	font-size: 28px;
-}
+.sent-message input { float: left; font-size: 20px; width: 170px; height: 24px; padding: 5px 15px; margin-left: 5px; margin-right: 0px;}
+.sent-message button { float: right; color: #2aa0bd; font-size: 20px; width: 75px; height: 34px; padding: 5px 15px 6px 15px; margin-right: 15px; }
+.sent-message input, .sent-message button { border: 0; border: 1px solid #ccc; border-top-right-radius: 10px; border-top-left-radius: 10px}
+.sent-message button:hover { 
+	background: #4ae871; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4ae871 0%, #f1ffbc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4ae871), color-stop(100%,#f1ffbc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4ae871 0%,#f1ffbc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4ae871 0%,#f1ffbc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4ae871 0%,#f1ffbc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4ae871 0%,#f1ffbc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ae871', endColorstr='#f1ffbc',GradientType=0 ); /* IE6-9 */ }
 
-#nav ul li {
-	font-size: 18px;
-	display: inline;
-	padding: 10px;
-	margin: 0px;
-	text-transform: capitalize;
-}
-
-#nav ul li a {
-	color: white;
-	text-decoration: none;
-}
-
-#content h1 {
-	font-size: 24px;
-}
-
-#content {
-	text-align: justify;
-}
+.sent-message input { color: #2aa0bd; }
