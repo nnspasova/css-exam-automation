@@ -1,9 +1,7 @@
+* { margin: 0; padding: 0; outline: 0 }
+
 html, body {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding: 0;
-	margin: 0;
-	color: #575e5b;
-}
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 #wrapper {
 	width: 960px;
@@ -14,59 +12,25 @@ html, body {
 	clear: both;
 }
 
-header {
-	background-image: url('images/header-bg.png');
-	background-repeat: repeat;
-}
+#wrapper > header:before,
+#wrapper > header:after { content:""; display:table; }
+#wrapper > header:after { clear:both; }
+#wrapper > header { *zoom:1; }
 
-header h1 {
-	float: left;
-	font-size: 16px;
-	text-transform: uppercase;
-	padding: 15px;
-	margin: 0;
-}
+#archives:before,
+#archives:after { content:""; display:table; }
+#archives:after { clear:both; }
+#archives { *zoom:1; }
 
-#nav {
-	float: right;
-}
-
-#nav ul {
-	padding: 15px;
-	margin: 0;
-}
-
-#nav ul li {
-	font-size: 14px;
-	display: inline;
-	padding: 8px;
-	margin: 0px;
-}
-
-#searchBar {
-	background-color: #000000;
-	padding: 8px;
-	color: #C6C6C6;
-}
-
-#searchBar a {
-	color: #C6C6C6;
-	text-decoration: none;
-	font-size: 14px;
-}
-
-#archives {
-	float: left;
-}
-
-#search {
-	float: right;
-}
-
-#content {
-	font-size: 14px;
-}
-
-#content h1 {
-	font-size: 24px;
-}
+#wrapper header { font-size: 10px; text-align: left; color: #575e5b; padding: 18px 20px 0 25px; background-color: #f6f5e9; }
+#wrapper header h1 { display: inline; }
+#nav { float: right;}
+#nav ul { list-style-type: none; }
+#nav ul li { display: inline; font-size: 16px; padding: 0 20px 0 0; }
+#searchBar { background-color: #000; padding: 13px 15px 12px 15px;}
+#archives { float: left; color: #c6b98e; }
+#archives a { display: inline-block; color: #c6b98e; text-decoration: none; }
+#search { float: right; color: #c6c6c6; }
+#search a { display: inline-block; text-decoration: none; color: #c6c6c6; font-size: 14px; }
+#content h1 { color: #575e5b; font-size: 24px; padding: 20px 0 25px 0; }
+#content p { color: #575e5b; font-size: 14px;margin-bottom: 10px; text-align: left; }
